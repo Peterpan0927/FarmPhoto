@@ -1,0 +1,802 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A60091A91FD50C6700943C9B /* InputsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A60091A81FD50C6700943C9B /* InputsCell.m */; };
+		A6099FB51FD1C9BC00893CC4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A6099FB41FD1C9BC00893CC4 /* Assets.xcassets */; };
+		A61599B81F60DFBC00932D9B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A61599B71F60DFBC00932D9B /* main.m */; };
+		A61599BB1F60DFBC00932D9B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A61599BA1F60DFBC00932D9B /* AppDelegate.m */; };
+		A61599C11F60DFBC00932D9B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A61599BF1F60DFBC00932D9B /* Main.storyboard */; };
+		A61599C61F60DFBC00932D9B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A61599C41F60DFBC00932D9B /* LaunchScreen.storyboard */; };
+		A61599D11F60DFBC00932D9B /* ______AppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A61599D01F60DFBC00932D9B /* ______AppTests.m */; };
+		A61599DC1F60DFBC00932D9B /* ______AppUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = A61599DB1F60DFBC00932D9B /* ______AppUITests.m */; };
+		A61599EB1F60E06100932D9B /* DrawerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A61599EA1F60E06100932D9B /* DrawerViewController.m */; };
+		A61599EE1F60E0AE00932D9B /* LeftMenuController.m in Sources */ = {isa = PBXBuildFile; fileRef = A61599ED1F60E0AE00932D9B /* LeftMenuController.m */; };
+		A61599F11F60E8B900932D9B /* FarmPhotoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A61599F01F60E8B900932D9B /* FarmPhotoViewController.m */; };
+		A61599F61F61246E00932D9B /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A61599F51F61246E00932D9B /* LoginViewController.m */; };
+		A61599F91F61391F00932D9B /* underLine.m in Sources */ = {isa = PBXBuildFile; fileRef = A61599F81F61391F00932D9B /* underLine.m */; };
+		A61599FC1F615A8F00932D9B /* NewFarmPhotoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A61599FB1F615A8F00932D9B /* NewFarmPhotoViewController.m */; };
+		A6302CBD1F692DF4001BC3F2 /* NewInputsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A6302CBC1F692DF4001BC3F2 /* NewInputsViewController.m */; };
+		A6422CB01F65159D0047644A /* InputsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A6422CAF1F65159D0047644A /* InputsViewController.m */; };
+		A6422CB31F66DCB40047644A /* NetWorkTool.m in Sources */ = {isa = PBXBuildFile; fileRef = A6422CB21F66DCB40047644A /* NetWorkTool.m */; };
+		A6574F2A1FCBF65F0014FA05 /* FarmWorkCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A6574F291FCBF65F0014FA05 /* FarmWorkCell.m */; };
+		A65ADD611F8666EC00B08207 /* ChangePassWordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A65ADD601F8666EC00B08207 /* ChangePassWordViewController.m */; };
+		A65D1D2B1FD67C2F0011F95C /* MBProgressHUD+CZ.m in Sources */ = {isa = PBXBuildFile; fileRef = A65D1D271FD67C2F0011F95C /* MBProgressHUD+CZ.m */; };
+		A65D1D2C1FD67C2F0011F95C /* MBProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = A65D1D281FD67C2F0011F95C /* MBProgressHUD.bundle */; };
+		A65D1D2D1FD67C2F0011F95C /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = A65D1D2A1FD67C2F0011F95C /* MBProgressHUD.m */; };
+		EB10276BBC7ACC899E3273C1 /* libPods-农产品拍易传App.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C978D6262986D35FD6FCE40 /* libPods-农产品拍易传App.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A61599CD1F60DFBC00932D9B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A61599AB1F60DFBC00932D9B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A61599B21F60DFBC00932D9B;
+			remoteInfo = "农产品拍易传App";
+		};
+		A61599D81F60DFBC00932D9B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A61599AB1F60DFBC00932D9B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A61599B21F60DFBC00932D9B;
+			remoteInfo = "农产品拍易传App";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1C978D6262986D35FD6FCE40 /* libPods-农产品拍易传App.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-农产品拍易传App.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2A760E6B3DEB52BD8F96E862 /* Pods-农产品拍易传App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-农产品拍易传App.release.xcconfig"; path = "Pods/Target Support Files/Pods-农产品拍易传App/Pods-农产品拍易传App.release.xcconfig"; sourceTree = "<group>"; };
+		A450EAD787A25BB2791F8663 /* Pods-农产品拍易传App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-农产品拍易传App.debug.xcconfig"; path = "Pods/Target Support Files/Pods-农产品拍易传App/Pods-农产品拍易传App.debug.xcconfig"; sourceTree = "<group>"; };
+		A60091A71FD50C6700943C9B /* InputsCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InputsCell.h; sourceTree = "<group>"; };
+		A60091A81FD50C6700943C9B /* InputsCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InputsCell.m; sourceTree = "<group>"; };
+		A6099FB41FD1C9BC00893CC4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A61599B31F60DFBC00932D9B /* 农产品拍易传App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "农产品拍易传App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A61599B71F60DFBC00932D9B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A61599B91F60DFBC00932D9B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		A61599BA1F60DFBC00932D9B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		A61599C01F60DFBC00932D9B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A61599C51F60DFBC00932D9B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A61599C71F60DFBC00932D9B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A61599CC1F60DFBC00932D9B /* 农产品拍易传AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "农产品拍易传AppTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A61599D01F60DFBC00932D9B /* ______AppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "______AppTests.m"; sourceTree = "<group>"; };
+		A61599D21F60DFBC00932D9B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A61599D71F60DFBC00932D9B /* 农产品拍易传AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "农产品拍易传AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A61599DB1F60DFBC00932D9B /* ______AppUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "______AppUITests.m"; sourceTree = "<group>"; };
+		A61599DD1F60DFBC00932D9B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A61599E91F60E06100932D9B /* DrawerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrawerViewController.h; sourceTree = "<group>"; };
+		A61599EA1F60E06100932D9B /* DrawerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrawerViewController.m; sourceTree = "<group>"; };
+		A61599EC1F60E0AE00932D9B /* LeftMenuController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeftMenuController.h; sourceTree = "<group>"; };
+		A61599ED1F60E0AE00932D9B /* LeftMenuController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeftMenuController.m; sourceTree = "<group>"; };
+		A61599EF1F60E8B900932D9B /* FarmPhotoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FarmPhotoViewController.h; sourceTree = "<group>"; };
+		A61599F01F60E8B900932D9B /* FarmPhotoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FarmPhotoViewController.m; sourceTree = "<group>"; };
+		A61599F41F61246E00932D9B /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		A61599F51F61246E00932D9B /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		A61599F71F61391F00932D9B /* underLine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = underLine.h; sourceTree = "<group>"; };
+		A61599F81F61391F00932D9B /* underLine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = underLine.m; sourceTree = "<group>"; };
+		A61599FA1F615A8F00932D9B /* NewFarmPhotoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewFarmPhotoViewController.h; sourceTree = "<group>"; };
+		A61599FB1F615A8F00932D9B /* NewFarmPhotoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewFarmPhotoViewController.m; sourceTree = "<group>"; };
+		A6302CBB1F692DF4001BC3F2 /* NewInputsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewInputsViewController.h; sourceTree = "<group>"; };
+		A6302CBC1F692DF4001BC3F2 /* NewInputsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewInputsViewController.m; sourceTree = "<group>"; };
+		A6422CAE1F65159D0047644A /* InputsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InputsViewController.h; sourceTree = "<group>"; };
+		A6422CAF1F65159D0047644A /* InputsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InputsViewController.m; sourceTree = "<group>"; };
+		A6422CB11F66DCB40047644A /* NetWorkTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetWorkTool.h; sourceTree = "<group>"; };
+		A6422CB21F66DCB40047644A /* NetWorkTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetWorkTool.m; sourceTree = "<group>"; };
+		A6574F281FCBF65F0014FA05 /* FarmWorkCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FarmWorkCell.h; sourceTree = "<group>"; };
+		A6574F291FCBF65F0014FA05 /* FarmWorkCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FarmWorkCell.m; sourceTree = "<group>"; };
+		A65ADD5F1F8666EC00B08207 /* ChangePassWordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChangePassWordViewController.h; sourceTree = "<group>"; };
+		A65ADD601F8666EC00B08207 /* ChangePassWordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChangePassWordViewController.m; sourceTree = "<group>"; };
+		A65D1D261FD67C2F0011F95C /* MBProgressHUD+CZ.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD+CZ.h"; sourceTree = "<group>"; };
+		A65D1D271FD67C2F0011F95C /* MBProgressHUD+CZ.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD+CZ.m"; sourceTree = "<group>"; };
+		A65D1D281FD67C2F0011F95C /* MBProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = MBProgressHUD.bundle; sourceTree = "<group>"; };
+		A65D1D291FD67C2F0011F95C /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
+		A65D1D2A1FD67C2F0011F95C /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A61599B01F60DFBC00932D9B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB10276BBC7ACC899E3273C1 /* libPods-农产品拍易传App.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A61599C91F60DFBC00932D9B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A61599D41F60DFBC00932D9B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		000661C3969476C8853E7113 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1C978D6262986D35FD6FCE40 /* libPods-农产品拍易传App.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		0F001E2A7E2CAAA62B344108 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A450EAD787A25BB2791F8663 /* Pods-农产品拍易传App.debug.xcconfig */,
+				2A760E6B3DEB52BD8F96E862 /* Pods-农产品拍易传App.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		A60091AA1FD548A300943C9B /* FarmWork */ = {
+			isa = PBXGroup;
+			children = (
+				A61599FA1F615A8F00932D9B /* NewFarmPhotoViewController.h */,
+				A61599FB1F615A8F00932D9B /* NewFarmPhotoViewController.m */,
+				A61599EF1F60E8B900932D9B /* FarmPhotoViewController.h */,
+				A61599F01F60E8B900932D9B /* FarmPhotoViewController.m */,
+			);
+			name = FarmWork;
+			sourceTree = "<group>";
+		};
+		A60091AB1FD548C100943C9B /* Inputs */ = {
+			isa = PBXGroup;
+			children = (
+				A6422CAE1F65159D0047644A /* InputsViewController.h */,
+				A6422CAF1F65159D0047644A /* InputsViewController.m */,
+				A6302CBB1F692DF4001BC3F2 /* NewInputsViewController.h */,
+				A6302CBC1F692DF4001BC3F2 /* NewInputsViewController.m */,
+			);
+			name = Inputs;
+			sourceTree = "<group>";
+		};
+		A60091AC1FD548E100943C9B /* Drawer */ = {
+			isa = PBXGroup;
+			children = (
+				A61599E91F60E06100932D9B /* DrawerViewController.h */,
+				A61599EA1F60E06100932D9B /* DrawerViewController.m */,
+				A61599EC1F60E0AE00932D9B /* LeftMenuController.h */,
+				A61599ED1F60E0AE00932D9B /* LeftMenuController.m */,
+			);
+			name = Drawer;
+			sourceTree = "<group>";
+		};
+		A60091AD1FD548FF00943C9B /* login */ = {
+			isa = PBXGroup;
+			children = (
+				A61599F41F61246E00932D9B /* LoginViewController.h */,
+				A61599F51F61246E00932D9B /* LoginViewController.m */,
+			);
+			name = login;
+			sourceTree = "<group>";
+		};
+		A60091AE1FD5491100943C9B /* passChange */ = {
+			isa = PBXGroup;
+			children = (
+				A65ADD5F1F8666EC00B08207 /* ChangePassWordViewController.h */,
+				A65ADD601F8666EC00B08207 /* ChangePassWordViewController.m */,
+			);
+			name = passChange;
+			sourceTree = "<group>";
+		};
+		A61599AA1F60DFBC00932D9B = {
+			isa = PBXGroup;
+			children = (
+				A61599B51F60DFBC00932D9B /* 农产品拍易传App */,
+				A61599CF1F60DFBC00932D9B /* 农产品拍易传AppTests */,
+				A61599DA1F60DFBC00932D9B /* 农产品拍易传AppUITests */,
+				A61599B41F60DFBC00932D9B /* Products */,
+				0F001E2A7E2CAAA62B344108 /* Pods */,
+				000661C3969476C8853E7113 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		A61599B41F60DFBC00932D9B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A61599B31F60DFBC00932D9B /* 农产品拍易传App.app */,
+				A61599CC1F60DFBC00932D9B /* 农产品拍易传AppTests.xctest */,
+				A61599D71F60DFBC00932D9B /* 农产品拍易传AppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A61599B51F60DFBC00932D9B /* 农产品拍易传App */ = {
+			isa = PBXGroup;
+			children = (
+				A6099FB41FD1C9BC00893CC4 /* Assets.xcassets */,
+				A6302CC11F692E97001BC3F2 /* Others */,
+				A6302CC01F692E8D001BC3F2 /* Model */,
+				A6302CBF1F692E7F001BC3F2 /* View */,
+				A6302CBE1F692E37001BC3F2 /* Controllers */,
+				A61599B61F60DFBC00932D9B /* Supporting Files */,
+			);
+			path = "农产品拍易传App";
+			sourceTree = "<group>";
+		};
+		A61599B61F60DFBC00932D9B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A61599B71F60DFBC00932D9B /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A61599CF1F60DFBC00932D9B /* 农产品拍易传AppTests */ = {
+			isa = PBXGroup;
+			children = (
+				A61599D01F60DFBC00932D9B /* ______AppTests.m */,
+				A61599D21F60DFBC00932D9B /* Info.plist */,
+			);
+			path = "农产品拍易传AppTests";
+			sourceTree = "<group>";
+		};
+		A61599DA1F60DFBC00932D9B /* 农产品拍易传AppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A61599DB1F60DFBC00932D9B /* ______AppUITests.m */,
+				A61599DD1F60DFBC00932D9B /* Info.plist */,
+			);
+			path = "农产品拍易传AppUITests";
+			sourceTree = "<group>";
+		};
+		A6302CBE1F692E37001BC3F2 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				A60091AE1FD5491100943C9B /* passChange */,
+				A60091AD1FD548FF00943C9B /* login */,
+				A60091AC1FD548E100943C9B /* Drawer */,
+				A60091AB1FD548C100943C9B /* Inputs */,
+				A60091AA1FD548A300943C9B /* FarmWork */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		A6302CBF1F692E7F001BC3F2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A61599BF1F60DFBC00932D9B /* Main.storyboard */,
+				A61599C41F60DFBC00932D9B /* LaunchScreen.storyboard */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		A6302CC01F692E8D001BC3F2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A6574F281FCBF65F0014FA05 /* FarmWorkCell.h */,
+				A6574F291FCBF65F0014FA05 /* FarmWorkCell.m */,
+				A60091A71FD50C6700943C9B /* InputsCell.h */,
+				A60091A81FD50C6700943C9B /* InputsCell.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		A6302CC11F692E97001BC3F2 /* Others */ = {
+			isa = PBXGroup;
+			children = (
+				A65D1D251FD67C2F0011F95C /* MBProgressHUD */,
+				A61599F71F61391F00932D9B /* underLine.h */,
+				A61599F81F61391F00932D9B /* underLine.m */,
+				A6422CB11F66DCB40047644A /* NetWorkTool.h */,
+				A6422CB21F66DCB40047644A /* NetWorkTool.m */,
+				A61599B91F60DFBC00932D9B /* AppDelegate.h */,
+				A61599BA1F60DFBC00932D9B /* AppDelegate.m */,
+				A61599C71F60DFBC00932D9B /* Info.plist */,
+			);
+			name = Others;
+			sourceTree = "<group>";
+		};
+		A65D1D251FD67C2F0011F95C /* MBProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				A65D1D261FD67C2F0011F95C /* MBProgressHUD+CZ.h */,
+				A65D1D271FD67C2F0011F95C /* MBProgressHUD+CZ.m */,
+				A65D1D281FD67C2F0011F95C /* MBProgressHUD.bundle */,
+				A65D1D291FD67C2F0011F95C /* MBProgressHUD.h */,
+				A65D1D2A1FD67C2F0011F95C /* MBProgressHUD.m */,
+			);
+			name = MBProgressHUD;
+			path = "../../私人通讯录/私人通讯录/MBProgressHUD";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A61599B21F60DFBC00932D9B /* 农产品拍易传App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A61599E01F60DFBC00932D9B /* Build configuration list for PBXNativeTarget "农产品拍易传App" */;
+			buildPhases = (
+				2037F56FA4143416B0484F9F /* [CP] Check Pods Manifest.lock */,
+				A61599AF1F60DFBC00932D9B /* Sources */,
+				A61599B01F60DFBC00932D9B /* Frameworks */,
+				A61599B11F60DFBC00932D9B /* Resources */,
+				45963F8C9B84C083B02D973B /* [CP] Embed Pods Frameworks */,
+				C4D27545B9D388607082C7CF /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "农产品拍易传App";
+			productName = "农产品拍易传App";
+			productReference = A61599B31F60DFBC00932D9B /* 农产品拍易传App.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A61599CB1F60DFBC00932D9B /* 农产品拍易传AppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A61599E31F60DFBC00932D9B /* Build configuration list for PBXNativeTarget "农产品拍易传AppTests" */;
+			buildPhases = (
+				A61599C81F60DFBC00932D9B /* Sources */,
+				A61599C91F60DFBC00932D9B /* Frameworks */,
+				A61599CA1F60DFBC00932D9B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A61599CE1F60DFBC00932D9B /* PBXTargetDependency */,
+			);
+			name = "农产品拍易传AppTests";
+			productName = "农产品拍易传AppTests";
+			productReference = A61599CC1F60DFBC00932D9B /* 农产品拍易传AppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A61599D61F60DFBC00932D9B /* 农产品拍易传AppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A61599E61F60DFBC00932D9B /* Build configuration list for PBXNativeTarget "农产品拍易传AppUITests" */;
+			buildPhases = (
+				A61599D31F60DFBC00932D9B /* Sources */,
+				A61599D41F60DFBC00932D9B /* Frameworks */,
+				A61599D51F60DFBC00932D9B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A61599D91F60DFBC00932D9B /* PBXTargetDependency */,
+			);
+			name = "农产品拍易传AppUITests";
+			productName = "农产品拍易传AppUITests";
+			productReference = A61599D71F60DFBC00932D9B /* 农产品拍易传AppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A61599AB1F60DFBC00932D9B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0910;
+				ORGANIZATIONNAME = "潘振鹏";
+				TargetAttributes = {
+					A61599B21F60DFBC00932D9B = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = M279MKV5DC;
+						ProvisioningStyle = Automatic;
+					};
+					A61599CB1F60DFBC00932D9B = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = M279MKV5DC;
+						ProvisioningStyle = Automatic;
+						TestTargetID = A61599B21F60DFBC00932D9B;
+					};
+					A61599D61F60DFBC00932D9B = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = M279MKV5DC;
+						ProvisioningStyle = Automatic;
+						TestTargetID = A61599B21F60DFBC00932D9B;
+					};
+				};
+			};
+			buildConfigurationList = A61599AE1F60DFBC00932D9B /* Build configuration list for PBXProject "农产品拍易传App" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A61599AA1F60DFBC00932D9B;
+			productRefGroup = A61599B41F60DFBC00932D9B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A61599B21F60DFBC00932D9B /* 农产品拍易传App */,
+				A61599CB1F60DFBC00932D9B /* 农产品拍易传AppTests */,
+				A61599D61F60DFBC00932D9B /* 农产品拍易传AppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A61599B11F60DFBC00932D9B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A61599C61F60DFBC00932D9B /* LaunchScreen.storyboard in Resources */,
+				A65D1D2C1FD67C2F0011F95C /* MBProgressHUD.bundle in Resources */,
+				A6099FB51FD1C9BC00893CC4 /* Assets.xcassets in Resources */,
+				A61599C11F60DFBC00932D9B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A61599CA1F60DFBC00932D9B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A61599D51F60DFBC00932D9B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2037F56FA4143416B0484F9F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		45963F8C9B84C083B02D973B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-农产品拍易传App/Pods-农产品拍易传App-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C4D27545B9D388607082C7CF /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-农产品拍易传App/Pods-农产品拍易传App-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A61599AF1F60DFBC00932D9B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A6574F2A1FCBF65F0014FA05 /* FarmWorkCell.m in Sources */,
+				A6302CBD1F692DF4001BC3F2 /* NewInputsViewController.m in Sources */,
+				A61599FC1F615A8F00932D9B /* NewFarmPhotoViewController.m in Sources */,
+				A61599EE1F60E0AE00932D9B /* LeftMenuController.m in Sources */,
+				A61599F11F60E8B900932D9B /* FarmPhotoViewController.m in Sources */,
+				A60091A91FD50C6700943C9B /* InputsCell.m in Sources */,
+				A65D1D2D1FD67C2F0011F95C /* MBProgressHUD.m in Sources */,
+				A6422CB31F66DCB40047644A /* NetWorkTool.m in Sources */,
+				A61599EB1F60E06100932D9B /* DrawerViewController.m in Sources */,
+				A6422CB01F65159D0047644A /* InputsViewController.m in Sources */,
+				A61599F91F61391F00932D9B /* underLine.m in Sources */,
+				A61599F61F61246E00932D9B /* LoginViewController.m in Sources */,
+				A65D1D2B1FD67C2F0011F95C /* MBProgressHUD+CZ.m in Sources */,
+				A65ADD611F8666EC00B08207 /* ChangePassWordViewController.m in Sources */,
+				A61599BB1F60DFBC00932D9B /* AppDelegate.m in Sources */,
+				A61599B81F60DFBC00932D9B /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A61599C81F60DFBC00932D9B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A61599D11F60DFBC00932D9B /* ______AppTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A61599D31F60DFBC00932D9B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A61599DC1F60DFBC00932D9B /* ______AppUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A61599CE1F60DFBC00932D9B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A61599B21F60DFBC00932D9B /* 农产品拍易传App */;
+			targetProxy = A61599CD1F60DFBC00932D9B /* PBXContainerItemProxy */;
+		};
+		A61599D91F60DFBC00932D9B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A61599B21F60DFBC00932D9B /* 农产品拍易传App */;
+			targetProxy = A61599D81F60DFBC00932D9B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A61599BF1F60DFBC00932D9B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A61599C01F60DFBC00932D9B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A61599C41F60DFBC00932D9B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A61599C51F60DFBC00932D9B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A61599DE1F60DFBC00932D9B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A61599DF1F60DFBC00932D9B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A61599E11F60DFBC00932D9B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A450EAD787A25BB2791F8663 /* Pods-农产品拍易传App.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				DEVELOPMENT_TEAM = M279MKV5DC;
+				INFOPLIST_FILE = "农产品拍易传App/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Peterpan.------App";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "${SRCROOT}/**";
+			};
+			name = Debug;
+		};
+		A61599E21F60DFBC00932D9B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2A760E6B3DEB52BD8F96E862 /* Pods-农产品拍易传App.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				DEVELOPMENT_TEAM = M279MKV5DC;
+				INFOPLIST_FILE = "农产品拍易传App/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Peterpan.------App";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "${SRCROOT}/**";
+			};
+			name = Release;
+		};
+		A61599E41F60DFBC00932D9B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = M279MKV5DC;
+				INFOPLIST_FILE = "农产品拍易传AppTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Peterpan.------AppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/农产品拍易传App.app/农产品拍易传App";
+			};
+			name = Debug;
+		};
+		A61599E51F60DFBC00932D9B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = M279MKV5DC;
+				INFOPLIST_FILE = "农产品拍易传AppTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Peterpan.------AppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/农产品拍易传App.app/农产品拍易传App";
+			};
+			name = Release;
+		};
+		A61599E71F60DFBC00932D9B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = M279MKV5DC;
+				INFOPLIST_FILE = "农产品拍易传AppUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Peterpan.------AppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "农产品拍易传App";
+			};
+			name = Debug;
+		};
+		A61599E81F60DFBC00932D9B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = M279MKV5DC;
+				INFOPLIST_FILE = "农产品拍易传AppUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Peterpan.------AppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "农产品拍易传App";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A61599AE1F60DFBC00932D9B /* Build configuration list for PBXProject "农产品拍易传App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A61599DE1F60DFBC00932D9B /* Debug */,
+				A61599DF1F60DFBC00932D9B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A61599E01F60DFBC00932D9B /* Build configuration list for PBXNativeTarget "农产品拍易传App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A61599E11F60DFBC00932D9B /* Debug */,
+				A61599E21F60DFBC00932D9B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A61599E31F60DFBC00932D9B /* Build configuration list for PBXNativeTarget "农产品拍易传AppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A61599E41F60DFBC00932D9B /* Debug */,
+				A61599E51F60DFBC00932D9B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A61599E61F60DFBC00932D9B /* Build configuration list for PBXNativeTarget "农产品拍易传AppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A61599E71F60DFBC00932D9B /* Debug */,
+				A61599E81F60DFBC00932D9B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A61599AB1F60DFBC00932D9B /* Project object */;
+}
