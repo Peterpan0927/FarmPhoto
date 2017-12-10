@@ -42,7 +42,7 @@
 - (void)LoginSuccess{
     CATransition *animation = [CATransition animation];
     
-    [animation setDuration:1.2];//设置动画时间
+    [animation setDuration:0.5];//设置动画时间
     
     animation.type = kCATransitionFade;//设置动画类型
     
@@ -61,7 +61,7 @@
 - (void)Logout{
     CATransition *animation = [CATransition animation];
     
-    [animation setDuration:1.2];//设置动画时间
+    [animation setDuration:0.5];//设置动画时间
     
     animation.type = kCATransitionFade;//设置动画类型
     

@@ -30,9 +30,20 @@
 
 @property (atomic, assign) BOOL isDownload;
 
+@property (nonatomic, strong) dispatch_group_t group;
+
 @end
 
+static int count = 0;
+
 @implementation FarmPhotoViewController
+
+-(dispatch_group_t)group{
+    if(_group == nil){
+        _group = dispatch_group_create();
+    }
+    return _group;
+}
 
 - (IBAction)btnClick{
     [[DrawerViewController sharedDrawer] openLeftMenu];
@@ -91,18 +102,13 @@
             NSArray *array = dict1[@"list"];
             NSLog(@"getFarmWorks~success");
             //        NSLog(@"%@", array);
-            dispatch_queue_t q = dispatch_queue_create("chuanxing", NULL);
-            dispatch_async(q, ^{
-                
-                for(NSDictionary *dict in array){
-                    NSLog(@"%@",dict);
-                    dispatch_async(q, ^{
-                        NSLog(@"%@-----",[NSThread currentThread]);
-                        [self postRequestWithFarmWorkSid:dict[@"farmWorkSid"]andfarmType:dict[@"farmWorkOperateName"] andfarmpeople:dict[@"executorName"] andland:dict[@"landName"] andbase:dict[@"baseName"] andtime:dict[@"updateTime"]];
-                    });
-                }
-                
-            });
+            for(NSDictionary *dict in array){
+                dispatch_group_async(self.group,dispatch_get_global_queue(0, 0), ^{
+                    NSLog(@"%@",[NSThread currentThread]);
+                    [self postRequestWithFarmWorkSid:dict[@"farmWorkSid"]andfarmType:dict[@"farmWorkOperateName"] andfarmpeople:dict[@"executorName"] andland:dict[@"landName"] andbase:dict[@"baseName"] andtime:dict[@"updateTime"]];
+                    
+                });
+            }
             //        NSLog(@"%@", self.dataArray);
         } failBlock:^(NSError *error) {
             NSLog(@"getFarmWorks~Fail");
@@ -131,15 +137,13 @@
             [dict2 setValue:farmWorkSid forKey:@"farmWorkSid"];
             [self.dataArray addObject:dict2];
             NSLog(@"%@",self.dataArray);
-            if(self.dataArray.count == 5){
+            count++;
+            if(count == 5){
                 dispatch_async(dispatch_get_main_queue(), ^{
-                    NSLog(@"调用--刷新数据");
                     [self.tableView reloadData];
-                    
                 });
+                self.isDownload = NO;
             }
-            
-            
         }
     } failBlock:^(NSError *error) {
         NSLog(@"fail~");
@@ -287,7 +291,8 @@
     NSLog(@"refreshClick: -- 刷新触发");
     // 此处添加刷新tableView数据的代码
     [refreshControl endRefreshing];
-    if(!self.isDownload){
+    if(self.isDownload){
+    }else{
         self.isDownload = YES;
         [self reloadTableView];
     }

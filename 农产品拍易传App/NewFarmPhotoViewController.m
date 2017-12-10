@@ -11,6 +11,7 @@
 #import "underLine.h"
 #import "LoginViewController.h"
 #import "NetWorkTool.h"
+#import <CTAssetsPickerController/CTAssetsPickerController.h>
 #define kBoundary @"boundary"
 
 @interface NewFarmPhotoViewController()<UIImagePickerControllerDelegate, UINavigationControllerDelegate, UIPickerViewDelegate, UIPickerViewDataSource>
@@ -32,6 +33,7 @@
 @property (nonatomic, strong) UIToolbar *toolbar;
 
 @property (nonatomic, strong) NSString *farmWorkSid;
+
 @property (weak, nonatomic) IBOutlet UIButton *imageButton;
 
 @end
@@ -43,14 +45,14 @@
     UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"获取图片" message:nil preferredStyle:UIAlertControllerStyleActionSheet];
     if([UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypeCamera]){
         UIAlertAction *defaultAction = [UIAlertAction actionWithTitle:@"拍照" style:UIAlertActionStyleDefault handler:^(UIAlertAction * action) {
-        //相机
-        UIImagePickerController *imagePickerController =  [[UIImagePickerController alloc] init];
-        imagePickerController.delegate = self;
-        imagePickerController.allowsEditing = YES;
-        imagePickerController.sourceType = UIImagePickerControllerSourceTypeCamera;
-        [self presentViewController:imagePickerController animated:YES completion:^{}];
-        
-    }];
+            //相机
+            UIImagePickerController *imagePickerController =  [[UIImagePickerController alloc] init];
+            imagePickerController.delegate = self;
+            imagePickerController.allowsEditing = YES;
+            imagePickerController.sourceType = UIImagePickerControllerSourceTypeCamera;
+            [self presentViewController:imagePickerController animated:YES completion:^{}];
+            
+        }];
         [alertController addAction:defaultAction];
     }
     UIAlertAction *defaultAction1 = [UIAlertAction actionWithTitle:@"从相册选择" style:UIAlertActionStyleDefault handler:^(UIAlertAction * action) {
@@ -85,6 +87,47 @@
     //使用模态返回到软件界面
     [self.navigationController dismissViewControllerAnimated:YES completion:nil];
 }
+
+//- (void)assetsPickerController:(CTAssetsPickerController *)picker didFinishPickingAssets:(NSArray *)assets
+//{
+//    NSArray *array =NSSearchPathForDirectoriesInDomains(NSDocumentDirectory,NSUserDomainMask,YES);
+//    NSString *documents = [array lastObject];
+//    NSString *documentPath = [documents stringByAppendingPathComponent:@"arrayXML.xml"];
+//
+//    NSArray *dataArray = [NSArray arrayWithArray:assets];
+//
+//
+//    [dataArray writeToFile:documentPath atomically:YES];
+//
+//
+//
+//    NSArray *resultArray = [NSArray arrayWithContentsOfFile:documentPath];
+//    NSLog(@"%@", documentPath);
+//
+//
+//    // 关闭图片选择界面
+//    [picker dismissViewControllerAnimated:YES completion:nil];
+//
+//    // 遍历选择的所有图片
+//    self.plCollection.photoArray = assets;
+//    for (NSInteger i =0; i < assets.count; i++) {
+//        // 基本配置
+//        CGFloat scale = [UIScreen mainScreen].scale;
+//        PHImageRequestOptions *options = [[PHImageRequestOptions alloc] init];
+//        options.resizeMode   =PHImageRequestOptionsResizeModeExact;
+//        options.deliveryMode =PHImageRequestOptionsDeliveryModeHighQualityFormat;
+//
+//        PHAsset *asset = assets[i];
+//        CGSize size =CGSizeMake(asset.pixelWidth / scale, asset.pixelHeight / scale);
+//        //        // 获取图片
+//        [[PHImageManager defaultManager] requestImageForAsset:asset  targetSize:size contentMode:PHImageContentModeDefault options:options resultHandler:^(UIImage *_Nullable result,NSDictionary *_Nullable info) {
+//            NSData *imageData =UIImageJPEGRepresentation([self  imageWithImageSimple:resultscaledToSize:CGSizeMake(200,200)], 0.5);
+//            [self ossUpload:imageData];
+//
+//        }];
+//    }
+//}
+
 
 
 - (void)viewDidLoad{
@@ -170,7 +213,6 @@
         self.farmActivityField.text = name;
     }
 }
-
 
 - (NSArray *)dataArray1{
     if(_dataArray1 == nil){
@@ -274,6 +316,7 @@
     [alertController addAction:action];
     [self presentViewController:alertController animated:YES completion:nil];
 }
+
 - (void)uploadImage{
     //创建请求
     NSURL *url = [NSURL URLWithString:@"http://www.intelitea.com/api/1.0/ll/system/photo/uploadPhotoByParams"];

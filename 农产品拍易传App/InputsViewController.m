@@ -17,10 +17,6 @@
 
 #define kScreenH [UIScreen mainScreen].bounds.size.height
 
-typedef NS_ENUM(NSUInteger, XWPresentOneTransitionType) {
-    XWPresentOneTransitionTypePresent = 0,//管理present动画
-    XWPresentOneTransitionTypeDismiss//管理dismiss动画
-};
 
 @interface InputsViewController ()<UITableViewDelegate, UITableViewDataSource, CAAnimationDelegate>
 
