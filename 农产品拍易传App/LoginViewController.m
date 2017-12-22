@@ -42,6 +42,8 @@ static NSDictionary *dict1;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    NSString *filePath = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory,NSUserDomainMask,YES).firstObject;
+    NSLog(@"%@", filePath);
     [self setupUI];
     // Do any additional setup after loading the view.
 }

@@ -30,11 +30,14 @@
 
 @property (atomic, assign) BOOL isDownload;
 
+@property (atomic, assign) NSInteger count;
+
 @property (nonatomic, strong) dispatch_group_t group;
 
 @end
 
-static int count = 0;
+static BOOL first = YES;
+
 
 @implementation FarmPhotoViewController
 
@@ -57,16 +60,16 @@ static int count = 0;
 }
 
 - (void)reloadTableView{
-    [self.dataArray removeAllObjects];
+//    [self.dataArray removeAllObjects];
     [self postRequest];
 }
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.count = 0;
     self.isDownload = NO;
-//    [self postRequest];
     [self setupRefresh];
-     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(reloadTableView) name:@"reloadData" object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(reloadTableView) name:@"reloadData" object:nil];
     [self addGestureRecognizer];
     [self setupUI];
     // Do any additional setup after loading the view.
@@ -136,13 +139,19 @@ static int count = 0;
             [dict2 setValue:realTime forKey:@"updateTime"];
             [dict2 setValue:farmWorkSid forKey:@"farmWorkSid"];
             [self.dataArray addObject:dict2];
+            //判断是不是第一次请求，如果不是之后都是请求到一个就删除之前的一个
+            if(!first){
+                 [self.dataArray removeObjectAtIndex:self.count];
+            }
             NSLog(@"%@",self.dataArray);
-            count++;
-            if(count == 5){
+            self.count++;
+            if(self.count == 5){
+                NSLog(@"count的值是:%ld",self.count);
                 dispatch_async(dispatch_get_main_queue(), ^{
                     [self.tableView reloadData];
                 });
                 self.isDownload = NO;
+                first = NO;
             }
         }
     } failBlock:^(NSError *error) {
@@ -288,15 +297,17 @@ static int count = 0;
 }
 // 下拉刷新触发，在此获取数据
 - (void)refreshClick:(UIRefreshControl *)refreshControl {
-    NSLog(@"refreshClick: -- 刷新触发");
+    self.count = 0;
+    NSLog(@"refreshClick: -- 刷新触发 -- count :%d", self.count);
     // 此处添加刷新tableView数据的代码
-    [refreshControl endRefreshing];
     if(self.isDownload){
+        NSLog(@"正在下载");
     }else{
+        NSLog(@"开始下载");
         self.isDownload = YES;
         [self reloadTableView];
     }
-    
+    [refreshControl endRefreshing];
 }
 
 
