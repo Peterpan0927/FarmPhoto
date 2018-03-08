@@ -60,7 +60,7 @@ static BOOL first = YES;
 }
 
 - (void)reloadTableView{
-//    [self.dataArray removeAllObjects];
+    [self.dataArray removeAllObjects];
     [self postRequest];
 }
 
@@ -94,28 +94,28 @@ static BOOL first = YES;
 
 
 - (void)postRequest{
-        NetWorkTool *tool = [NetWorkTool sharedNetWordTool];
-        NSString *session = [tool getSessionId];
-        NSString *companySid = [tool getCompanySid];
-        NSURL *url = [NSURL URLWithString:@"http://www.intelitea.com/api/1.0/ll/enterprice/farmwork/getFarmworks"];
-        NSDictionary *dict = @{@"sessionId":session,@"companySid":companySid ,@"landSid":@"-1", @"baseSid":@"-1", @"number":@"5", @"page":@"1"};
-        [tool postWithSuccess:^(NSData *data, NSURLResponse *response) {
-            NSDictionary *dict = [NSJSONSerialization JSONObjectWithData:data options:kNilOptions error:nil];
-            NSDictionary *dict1 = dict[@"contents"];
-            NSArray *array = dict1[@"list"];
-            NSLog(@"getFarmWorks~success");
-            //        NSLog(@"%@", array);
-            for(NSDictionary *dict in array){
-                dispatch_group_async(self.group,dispatch_get_global_queue(0, 0), ^{
-                    NSLog(@"%@",[NSThread currentThread]);
-                    [self postRequestWithFarmWorkSid:dict[@"farmWorkSid"]andfarmType:dict[@"farmWorkOperateName"] andfarmpeople:dict[@"executorName"] andland:dict[@"landName"] andbase:dict[@"baseName"] andtime:dict[@"updateTime"]];
-                    
-                });
-            }
-            //        NSLog(@"%@", self.dataArray);
-        } failBlock:^(NSError *error) {
-            NSLog(@"getFarmWorks~Fail");
-        } andDict:dict andURL:url];
+    NetWorkTool *tool = [NetWorkTool sharedNetWordTool];
+    NSString *session = [tool getSessionId];
+    NSString *companySid = [tool getCompanySid];
+    NSURL *url = [NSURL URLWithString:@"http://www.intelitea.com/api/1.0/ll/enterprice/farmwork/getFarmworks"];
+    NSDictionary *dict = @{@"sessionId":session,@"companySid":companySid ,@"landSid":@"-1", @"baseSid":@"-1", @"number":@"5", @"page":@"1"};
+    [tool postWithSuccess:^(NSData *data, NSURLResponse *response) {
+        NSDictionary *dict = [NSJSONSerialization JSONObjectWithData:data options:kNilOptions error:nil];
+        NSDictionary *dict1 = dict[@"contents"];
+        NSArray *array = dict1[@"list"];
+        NSLog(@"getFarmWorks~success");
+        //        NSLog(@"%@", array);
+        for(NSDictionary *dict in array){
+            dispatch_group_async(self.group,dispatch_get_global_queue(0, 0), ^{
+                NSLog(@"%@",[NSThread currentThread]);
+                [self postRequestWithFarmWorkSid:dict[@"farmWorkSid"]andfarmType:dict[@"farmWorkOperateName"] andfarmpeople:dict[@"executorName"] andland:dict[@"landName"] andbase:dict[@"baseName"] andtime:dict[@"updateTime"]];
+                
+            });
+        }
+        //        NSLog(@"%@", self.dataArray);
+    } failBlock:^(NSError *error) {
+        NSLog(@"getFarmWorks~Fail");
+    } andDict:dict andURL:url];
 }
 
 - (void)postRequestWithFarmWorkSid:(NSString *)farmWorkSid andfarmType:(NSString *)type andfarmpeople:(NSString *)person andland:(NSString *)land andbase:(NSString *)base andtime:(NSString *)time{
@@ -140,19 +140,19 @@ static BOOL first = YES;
             [dict2 setValue:farmWorkSid forKey:@"farmWorkSid"];
             [self.dataArray addObject:dict2];
             //判断是不是第一次请求，如果不是之后都是请求到一个就删除之前的一个
-            if(!first){
-                 [self.dataArray removeObjectAtIndex:self.count];
-            }
-            NSLog(@"%@",self.dataArray);
-            self.count++;
-            if(self.count == 5){
-                NSLog(@"count的值是:%ld",self.count);
-                dispatch_async(dispatch_get_main_queue(), ^{
-                    [self.tableView reloadData];
-                });
-                self.isDownload = NO;
-                first = NO;
-            }
+            //            if(!first){
+            //                [self.dataArray removeObjectAtIndex:self.count];
+            //            }
+            //            NSLog(@"%@",self.dataArray);
+            //            self.count++;
+            //            if(self.count%5 == 0){
+            //                NSLog(@"count的值是:%ld",self.count);
+            dispatch_async(dispatch_get_main_queue(), ^{
+                [self.tableView reloadData];
+            });
+            //                self.isDownload = NO;
+            //                first = NO;
+            //            }
         }
     } failBlock:^(NSError *error) {
         NSLog(@"fail~");
@@ -160,7 +160,7 @@ static BOOL first = YES;
 }
 
 - (void)add{
-   [self performSegueWithIdentifier:@"farm" sender:nil];
+    [self performSegueWithIdentifier:@"farm" sender:nil];
     
 }
 
@@ -207,11 +207,11 @@ static BOOL first = YES;
     }
     
     
-//    NSLog(@"%@", dict);
+    //    NSLog(@"%@", dict);
     
-   
-//    UIImage *image = [UIImage imageWithData:data];
-//    NSDictionary *dict1 = @{@"farmWorkImage":image};
+    
+    //    UIImage *image = [UIImage imageWithData:data];
+    //    NSDictionary *dict1 = @{@"farmWorkImage":image};
     cell.layer.cornerRadius = 5;
     cell.layer.masksToBounds = YES;
     return cell;
@@ -298,7 +298,7 @@ static BOOL first = YES;
 // 下拉刷新触发，在此获取数据
 - (void)refreshClick:(UIRefreshControl *)refreshControl {
     self.count = 0;
-    NSLog(@"refreshClick: -- 刷新触发 -- count :%d", self.count);
+    NSLog(@"refreshClick: -- 刷新触发 -- count :%ld", self.count);
     // 此处添加刷新tableView数据的代码
     if(self.isDownload){
         NSLog(@"正在下载");
@@ -345,3 +345,4 @@ static BOOL first = YES;
 
 
 @end
+

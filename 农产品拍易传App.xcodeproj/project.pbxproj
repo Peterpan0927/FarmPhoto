@@ -29,7 +29,7 @@
 		A65D1D2B1FD67C2F0011F95C /* MBProgressHUD+CZ.m in Sources */ = {isa = PBXBuildFile; fileRef = A65D1D271FD67C2F0011F95C /* MBProgressHUD+CZ.m */; };
 		A65D1D2C1FD67C2F0011F95C /* MBProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = A65D1D281FD67C2F0011F95C /* MBProgressHUD.bundle */; };
 		A65D1D2D1FD67C2F0011F95C /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = A65D1D2A1FD67C2F0011F95C /* MBProgressHUD.m */; };
-		EB10276BBC7ACC899E3273C1 /* libPods-农产品拍易传App.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C978D6262986D35FD6FCE40 /* libPods-农产品拍易传App.a */; };
+		EB10276BBC7ACC899E3273C1 /* libPods-农产品拍易传App.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C978D6262986D35FD6FCE40 /* libPods-农产品拍易传App.a */; settings = {ATTRIBUTES = (Required, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,6 +83,7 @@
 		A61599FB1F615A8F00932D9B /* NewFarmPhotoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewFarmPhotoViewController.m; sourceTree = "<group>"; };
 		A6302CBB1F692DF4001BC3F2 /* NewInputsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewInputsViewController.h; sourceTree = "<group>"; };
 		A6302CBC1F692DF4001BC3F2 /* NewInputsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewInputsViewController.m; sourceTree = "<group>"; };
+		A63FEA961FF63AB5009DB8C3 /* 农产品拍易传App copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "农产品拍易传App copy-Info.plist"; path = "/Users/peterpan/Public/ios-test/农产品拍易传App/农产品拍易传App copy-Info.plist"; sourceTree = "<absolute>"; };
 		A6422CAE1F65159D0047644A /* InputsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InputsViewController.h; sourceTree = "<group>"; };
 		A6422CAF1F65159D0047644A /* InputsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InputsViewController.m; sourceTree = "<group>"; };
 		A6422CB11F66DCB40047644A /* NetWorkTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetWorkTool.h; sourceTree = "<group>"; };
@@ -201,6 +202,7 @@
 				A61599B41F60DFBC00932D9B /* Products */,
 				0F001E2A7E2CAAA62B344108 /* Pods */,
 				000661C3969476C8853E7113 /* Frameworks */,
+				A63FEA961FF63AB5009DB8C3 /* 农产品拍易传App copy-Info.plist */,
 			);
 			sourceTree = "<group>";
 		};
@@ -685,6 +687,13 @@
 				DEVELOPMENT_TEAM = M279MKV5DC;
 				INFOPLIST_FILE = "农产品拍易传App/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/AFNetworking\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/CTAssetsPickerController\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/PureLayout\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/SDWebImage\"",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "Peterpan.------App";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				USER_HEADER_SEARCH_PATHS = "${SRCROOT}/**";
@@ -701,6 +710,13 @@
 				DEVELOPMENT_TEAM = M279MKV5DC;
 				INFOPLIST_FILE = "农产品拍易传App/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/AFNetworking\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/CTAssetsPickerController\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/PureLayout\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/SDWebImage\"",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "Peterpan.------App";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				USER_HEADER_SEARCH_PATHS = "${SRCROOT}/**";
