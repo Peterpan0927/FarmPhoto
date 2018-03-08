@@ -9,3 +9,4 @@ i wrote the upload part all by the system functions,maybe you can learn somethin
 ```shell
 pod install
 ```
+But the MBHUDProcess is not in this,you can download it by yourself
